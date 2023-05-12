@@ -1,0 +1,107 @@
+:root{
+  --tabs: rgb(128, 151, 215);
+  --background-color: rgb(6, 11, 25);
+  --border-color: rgb(255, 255, 255, 0.1);
+  --highlight-color: rgb(126, 87, 194);
+}
+
+/* main */
+h1{
+  font-family: 'Source Sans Pro';
+  font-weight: 900;
+  font-size: 9vmin;
+}
+body{
+  background-color:black;
+  color: aliceblue;
+  font-family: 'Source Sans Pro';
+}
+
+/* Navbar */
+.navbar-brand{
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-size: 4vmin;
+}
+.navbar{
+  border-radius: 25px;
+  padding: 0 5px;
+  backdrop-filter: blur(3px);
+}
+.nav-link{
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+}
+/* Title */
+
+.landing{
+  text-align: center;
+  
+}
+.hero{
+  font-family:'Source Sans Pro';
+  font-size: 20vmin;
+}
+.title-disc{
+  font-size: 3vmin;
+}
+.logo{
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 10%, #FFCC70 50%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.titles{
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.pfp{
+  width: 50%;
+  border-radius: 0 0 400px 400px;
+}
+
+/* Subhead */
+
+.lead{
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-size: 3.6vmin;
+}
+.kashme{
+  border-radius: 400px 400px 10px 10px ;
+}
+/* Gear */
+.came{
+  border-radius: 10px 10px 400px 400px;
+}
+/* Album Page */
+h5{
+  color: white;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.carousel-inner{
+  border-radius: 40px;
+}
+/* Best Clicks */
+hr{
+  border-style: none;
+  border-top-style: dotted;
+  border-color: rgb(216, 188, 250);
+  border-width: 10px;
+  margin: 80px auto;
+  width: 5%
+}
+.image{
+  border-radius: 25px;
+  padding: 10px;
+}
+.wrap img{
+  transition: 400ms ease 100ms
+}
+.wrap:hover .image:not(:hover){
+  filter: blur(5px);
+}
+.image:hover{
+  transform: scale(1.1);
+}
