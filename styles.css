@@ -16,7 +16,9 @@ body{
   color: aliceblue;
   font-family: 'Source Sans Pro';
 }
-
+.container{
+  padding: 70px;
+}
 /* Navbar */
 .navbar-brand{
   font-family: 'Source Sans Pro';
