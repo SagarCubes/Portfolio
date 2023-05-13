@@ -34,6 +34,10 @@ body{
   font-family: "Source Sans Pro";
   font-weight: 600;
 }
+.drdo{
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
 /* Title */
 
 .landing{
@@ -106,4 +110,27 @@ hr{
 }
 .image:hover{
   transform: scale(1.1);
+}
+/* Contact */
+.cimg1{
+  border-radius: 400px 400px 10px 10px;
+  width: 70%;
+}
+.cimg2{
+  border-radius: 10px 10px 400px 400px;
+  width: 70%;
+}
+.it{
+  background-color: transparent;
+}
+.leadx{
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-size: 6vmin;
+}
+.textx{
+  padding: 50px;
+}
+.contact{
+  padding: 30px;
 }
