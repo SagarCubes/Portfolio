@@ -19,6 +19,15 @@ body{
 .container{
   padding: 15px;
 }
+::-webkit-scrollbar{
+  background: linear-gradient(43deg, #4158D0 0%, #C850C0 50%, #FFCC70 99%);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 25px;
+    background: transparent;
+    box-shadow: 0px 0px 0px 100000vh black;
+
+}
 /* Navbar */
 .navbar-brand{
   font-family: 'Source Sans Pro';
