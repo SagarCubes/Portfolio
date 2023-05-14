@@ -21,7 +21,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <script src="main.js"></script>
-  <nav class="navbar sticky-top navbar-expand-lg rounded" aria-label="Eleventh navbar example">
+    <nav class="navbar sticky-top navbar-expand-lg rounded" aria-label="Eleventh navbar example">
     <div class="container-fluid">
       <a class="navbar-brand logo" href="#">Sagar</a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,9 +50,9 @@
               Photography
             </button>
             <ul class="dropdown-menu drdo">
-              <li><a class="dropdown-item" href="Kashmir.html">Kashmir</a></li>
-              <li><a class="dropdown-item" href="Aerial.html">Aerial</a></li>
-              <li><a class="dropdown-item" href="Summer.html">Summer</a></li>
+              <li><a class="dropdown-item drdo" href="Kashmir.html">Kashmir</a></li>
+              <li><a class="dropdown-item drdo" href="Aerial.html">Aerial</a></li>
+              <li><a class="dropdown-item drdo" href="Summer.html">Summer</a></li>
             </ul>
           </li>
         </ul>
@@ -60,7 +60,7 @@
     </div>
   </nav>
 
-    <div class="container col-xxl-8 px-4 py-5 landing">
+  <div class="container col-xxl-8 px-4 py-5 landing">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-lg-12 titles">
         <h1 class="display-1 fw-bold lh-1 mb-3 hero" id="scrollspyHeading1">How is life?</h1>
@@ -150,30 +150,30 @@
 
     <div class="row wrap">
 
-      <div class="col-lg-5">
+      <div class="col-lg-5 col-sm-6">
         <div class="row wrap">
-          <img src="images/image031.jpg" alt="" class="image">
+          <img src="images/image031.jpg" alt="" class="image" data-bs-toggle="modal" data-bs-target="#image031">
         </div>
         <div class="row wrap">
-          <img src="images/image011.jpg" alt="" class="image">
+          <img src="images/image011.jpg" alt="" class="image" data-bs-toggle="modal" data-bs-target="#image011">
         </div>
         <div class="row wrap">
-          <img src="images/image030.jpg" alt="" class="image">
+          <img src="images/image030.jpg" alt="" class="image" data-bs-toggle="modal" data-bs-target="#image030">
         </div>
       </div>
 
-      <div class="col-lg-7">
+      <div class="col-lg-7 col-sm-6">
         <div class="row wrap">
-          <img src="images/image103.jpg" alt="" class="image">
+            <img src="images/image103.jpg" alt="" class="image" data-bs-toggle="modal" data-bs-target="#image103">
         </div>
         <div class="row wrap">
-          <img src="images/image003.jpg" alt="" class="image">
+          <img src="images/image003.jpg" alt="" class="image" data-bs-toggle="modal" data-bs-target="#image003">
         </div>
         <div class="row wrap">
-          <img src="images/Kashmir/image011.jpg" alt="" class="image">
+          <img src="images/Kashmir/image011.jpg" alt="" class="image" data-bs-toggle="modal" data-bs-target="#kimage011">
         </div>
         <div class="row wrap">
-          <img src="images/Kashmir/image023.jpg" alt="" class="image">
+          <img src="images/Kashmir/image023.jpg" alt="" class="image" data-bs-toggle="modal" data-bs-target="#kimage023">
         </div>
       </div>
 
@@ -195,6 +195,126 @@
       </div>
       <div class="col-lg-4">
         <img src="images/image108.jpg" alt="" class="cimg2 img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <div class="modal fade" id="image031" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content full-img">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row">
+              <img src="images/image031.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="image011" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content full-img">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row">
+              <img src="images/image011.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="image030" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content full-img">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row">
+              <img src="images/image030.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="image103" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content full-img">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row">
+              <img src="images/image103.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="image003" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content full-img">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row">
+              <img src="images/image003.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="kimage011" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content full-img">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row">
+              <img src="images/Kashmir/image011.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="kimage023" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content full-img">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row">
+              <img src="images/Kashmir/image023.jpg" alt="">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
