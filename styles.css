@@ -4,6 +4,26 @@
   --border-color: rgb(255, 255, 255, 0.1);
   --highlight-color: rgb(126, 87, 194);
 }
+/* Animations */
+@keyframes transition{
+  from{
+    opacity: 0;
+
+  }
+  to{
+    opacity: 1;
+
+  }
+}
+
+@keyframes navbarTransition{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
 
 /* main */
 h1{
@@ -17,7 +37,9 @@ body{
   font-family: 'Source Sans Pro';
 }
 .container{
-  padding: 15px;
+  padding: 10px;
+  animation: transition 700ms;
+  transition: 500ms ease 100ms
 }
 ::-webkit-scrollbar{
   background: linear-gradient(43deg, #4158D0 0%, #C850C0 50%, #FFCC70 99%);
@@ -28,6 +50,8 @@ body{
     box-shadow: 0px 0px 0px 100000vh black;
 
 }
+
+
 /* Navbar */
 .navbar-brand{
   font-family: 'Source Sans Pro';
@@ -38,6 +62,7 @@ body{
   border-radius: 25px;
   padding: 0 5px;
   backdrop-filter: blur(3px);
+  animation: navbarTransition 700ms;
 }
 .nav-link{
   font-family: "Source Sans Pro";
@@ -46,7 +71,10 @@ body{
 .drdo{
   background-color: transparent;
   backdrop-filter: blur(10px);
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
 }
+
 /* Title */
 
 .landing{
@@ -85,10 +113,14 @@ body{
 .kashme{
   border-radius: 400px 400px 10px 10px ;
 }
+
+
 /* Gear */
 .came{
   border-radius: 10px 10px 400px 400px;
 }
+
+
 /* Album Page */
 h5{
   color: white;
@@ -98,6 +130,8 @@ h5{
 .carousel-inner{
   border-radius: 40px;
 }
+
+
 /* Best Clicks */
 hr{
   border-style: none;
@@ -108,26 +142,32 @@ hr{
   width: 5%
 }
 .image{
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 10px;
 }
 .wrap img{
-  transition: 400ms ease 100ms
+  transition: 500ms ease 100ms
 }
 .wrap:hover .image:not(:hover){
   filter: blur(5px);
 }
 .image:hover{
-  transform: scale(1.1);
+  transform: scale(1.09);
+  z-index: 10;
 }
+.gallery{
+  padding: 0 40px;
+}
+
+
 /* Contact */
 .cimg1{
   border-radius: 400px 400px 10px 10px;
-  width: 70%;
+  width: 90%;
 }
 .cimg2{
   border-radius: 10px 10px 400px 400px;
-  width: 70%;
+  width: 90%;
 }
 .it{
   background-color: transparent;
@@ -142,4 +182,11 @@ hr{
 }
 .contact{
   padding: 30px;
+}
+
+
+/* For Galleries */
+.full-img{
+  background-color: transparent;
+  backdrop-filter: blur(8px);
 }
