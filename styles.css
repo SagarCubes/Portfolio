@@ -142,7 +142,7 @@ hr{
   width: 5%
 }
 .image{
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 10px;
 }
 .wrap img{
@@ -152,11 +152,8 @@ hr{
   filter: blur(5px);
 }
 .image:hover{
-  transform: scale(1.09);
+  transform: scale(1.04);
   z-index: 10;
-}
-.gallery{
-  padding: 0 40px;
 }
 
 
@@ -189,4 +186,7 @@ hr{
 .full-img{
   background-color: transparent;
   backdrop-filter: blur(8px);
+}
+.gallery{
+  padding: 0 50px;
 }
