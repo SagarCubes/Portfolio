@@ -79,7 +79,6 @@ body{
 
 .landing{
   text-align: center;
-  
 }
 .hero{
   font-family:'Source Sans Pro';
@@ -94,6 +93,7 @@ body{
   color: transparent;
 }
 .titles{
+  font-family: 'Krona One';
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   -webkit-background-clip: text;
   color: transparent;
@@ -108,7 +108,7 @@ body{
 .lead{
   font-family: 'Source Sans Pro';
   font-weight: 600;
-  font-size: 3.6vmin;
+  font-size: 4vmin;
 }
 .kashme{
   border-radius: 400px 400px 10px 10px ;
@@ -149,7 +149,7 @@ hr{
   transition: 500ms ease 100ms
 }
 .wrap:hover .image:not(:hover){
-  filter: blur(5px);
+  filter: blur(4px);
 }
 .image:hover{
   transform: scale(1.04);
@@ -190,3 +190,4 @@ hr{
 .gallery{
   padding: 0 50px;
 }
+
