@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- Frameworks and Others -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body class="gallery-page">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark custom-navbar">
+    <div class="container-fluid px5">
+
+        <a class="navbar-brand fs-3" href="index.html">
+            Sagar Dudhe
+        </a>
+
+        <button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent">
+
+            <i class="bi bi-list fs-2"></i>
+
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end reveal" id="navbarContent">
+
+            <ul class="navbar-nav align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown">
+
+                        Works
+
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark">
+
+                        <li>
+                            <a class="dropdown-item" href="aero-india.html">
+                                Aero India
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="aviation.html">
+                                Aviation
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="travel.html">
+                                Travel
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="wildlife.html">
+                                Wildlife
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="portraits.html">
+                                Portraits
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#connect">Connect</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+<section class="page-hero">
+    <section class="hero-container">
+    <div class="hero-content">
+        <div class="hero-title reveal">
+            Portraits
+        </div>
+        <p class="section-subtitle reveal" data-delay="120">People as I see them — candid, expressive, and completely themselves.
+        </p>
+    </div>
+    </section>
+</section>
+    
+
+
+<section id="featured-work" class="featured-work">
+
+
+    <div class="gallery-wrapper reveal" data-delay="120">
+            <div id="gallery-ptr" class="gallery-grid"></div>
+    </div>
+        
+
+    <section class="albums" id="albums">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <h2 class="section-title reveal">Albums</h2>
+
+            <p class="section-subtitle reveal">
+                Browse complete collections.
+            </p>
+
+        </div>
+
+        <div class="albums-grid">
+
+            <a href="aero-india.html" class="album-card album-aero-india reveal" data-delay="0">
+
+            <div class="album-image image-aero-india">
+                    <img src="images/suryakiran-portrait.jpg">
+
+                <div class="album-title">
+                    Aero India
+                </div>
+            </div>
+
+            </a>
+
+            <a href="aviation.html" class="album-card album-aviation reveal" data-delay="120">
+
+            <div class="album-image image-aviation">
+                    <img src="images/aka-front-navi.webp">
+
+                <div class="album-title">
+                    Aviation
+                </div>
+            </div>
+            
+            </a>
+
+
+            <a href="travel.html" class="album-card album-travel reveal" data-delay="240">
+
+            <div class="album-image image-travel">
+                    <img src="images/chikmagalur-mountain.webp">
+
+                <div class="album-title">
+                    Travel
+                </div>
+            </div>
+            
+            </a>
+
+
+            <a href="wildlife.html" class="album-card album-wildlife reveal" data-delay="360">
+
+            <div class="album-image image-wildlife">
+                    <img src="images/peacock-hidden.webp">
+
+                <div class="album-title">
+                    Wildlife
+                </div>
+            </div>
+            
+            </a>
+            <a href="portraits.html" class="album-card album-portraits reveal" data-delay="480">
+
+            <div class="album-image image-portraits">
+                    <img src="images/woman-cafe.webp">
+
+                <div class="album-title">
+                    Portraits
+                </div>
+            </div>
+            
+            </a>
+
+        </div>
+    </div>
+    </section>
+
+</section>
+</body>
+
+</html>
