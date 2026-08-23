@@ -1190,6 +1190,12 @@ html{
         overflow-x: hidden;
     }
 }
+@media (max-width: 600px) {
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+    }
+}
 /* ---------------- IMAGE ---------------- */
 
 .lightbox-image {
