@@ -1134,14 +1134,14 @@ html{
 
 /*---------------LIGHTBOX---------------*/
 
-
 .lightbox {
     position: fixed;
     inset: 0;
 
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     height: 100dvh;
+
+    box-sizing: border-box;
 
     z-index: 9999;
 
@@ -1150,6 +1150,8 @@ html{
     justify-content: center;
 
     padding: 30px;
+
+    overflow: hidden;
 
     background: rgba(15, 15, 15, 0.62);
 
@@ -1165,55 +1167,30 @@ html{
         visibility 0.35s ease;
 }
 
-
 .lightbox.active {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
 
-@media (max-width: 600px) {
 
-    img {
-        max-width: 100%;
-    }
-
-    .hero img,
-    .about img,
-    .featured img,
-    .albums img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-}
-@media (max-width: 600px) {
-    .hero-image {
-        width: 100%;
-        max-width: 100%;
-    }
-}
-/* ---------------- IMAGE ---------------- */
+/* IMAGE */
 
 .lightbox-image {
     display: block;
 
-    max-width: 92vw;
-    max-height: 90vh;
+    width: auto !important;
+    height: auto !important;
 
-    max-width: 92dvw;
-    max-height: 90dvh;
-
-    width: auto;
-    height: auto;
+    max-width: calc(100vw - 60px) !important;
+    max-height: calc(100dvh - 60px) !important;
 
     object-fit: contain;
+
+    box-sizing: border-box;
+
     border-radius: 12px;
-    border: 10px solid;
-    border-color: var(--accent);
+    border: 10px solid var(--accent);
 
     opacity: 0;
     transform: scale(0.92);
@@ -1226,14 +1203,15 @@ html{
         transform 0.45s cubic-bezier(.22, .61, .36, 1);
 }
 
-
 .lightbox.active .lightbox-image {
     opacity: 1;
     transform: scale(1);
 }
+.gallery-item img{
+    cursor: crosshair;
+}
 
-
-/* ---------------- CLOSE BUTTON ---------------- */
+/* CLOSE BUTTON */
 
 .lightbox-close {
     position: absolute;
@@ -1271,21 +1249,13 @@ html{
         transform 0.3s cubic-bezier(.22, .61, .36, 1);
 }
 
-
 .lightbox-close:hover {
     background: rgba(255, 255, 255, 0.25);
     transform: rotate(90deg);
 }
 
 
-/* ---------------- GALLERY CURSOR ---------------- */
-
-.gallery-item img {
-    cursor: crosshair;
-}
-
-
-/* ---------------- MOBILE ---------------- */
+/* MOBILE */
 
 @media (max-width: 800px) {
 
@@ -1299,15 +1269,11 @@ html{
     }
 
     .lightbox-image {
-        max-width: 94vw;
-        max-width: 94dvw;
+        max-width: calc(100vw - 30px) !important;
+        max-height: calc(100dvh - 80px) !important;
 
-        max-height: 86vh;
-        max-height: 86dvh;
-
+        border-width: 6px;
         border-radius: 7px;
-
-        transform: scale(0.94);
     }
 
     .lightbox-close {
@@ -1319,4 +1285,125 @@ html{
 
         font-size: 27px;
     }
+}
+
+
+/*-------FOR MOBILE------*/
+
+@media (max-width: 600px) {
+
+    /* Hero typography */
+    .hero {
+        min-height: auto;
+        padding: 110px 20px 30px;
+    }
+
+    .hero-title {
+        font-size: clamp(3.2rem, 15vw, 4.5rem);
+        line-height: 0.92;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-tags {
+        font-size: 0.75rem;
+        letter-spacing: 0.06em;
+        margin-bottom: 2rem;
+    }
+
+    .hero-portrait {
+        width: min(86vw, 380px);
+        height: auto;
+        aspect-ratio: 500 / 640;
+    }
+
+    .scroll-indicator {
+        font-size: 3rem;
+    }
+
+
+    /* Featured gallery */
+    .gallery-wrapper {
+        padding-inline: 12px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .gallery-item,
+    .gallery-item.large,
+    .gallery-item.medium,
+    .gallery-item.wide {
+        grid-column: 1;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* Albums */
+    .albums {
+        margin-top: 7rem;
+        padding-bottom: 3rem;
+    }
+
+    .albums-grid {
+        width: 90%;
+        gap: 1.5rem;
+    }
+
+    .album-title {
+        font-size: 1.25rem;
+        padding: 11px 16px;
+        left: 14px;
+        bottom: 14px;
+    }
+
+
+    /* About */
+    .about {
+        margin-top: 7rem;
+    }
+
+    .about-grid {
+        width: 88vw;
+        gap: 3rem;
+    }
+
+    .about-heading {
+        font-size: clamp(2.8rem, 11vw, 4rem);
+    }
+
+    .about-text {
+        font-size: 0.95rem;
+    }
+    .about-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem 1.25rem;
+}
+
+.about-links-title {
+    font-size: 1.1rem;
+    margin-right: 0;
+}
+
+.social-link {
+    font-size: 1rem;
+    gap: 6px;
+}
+
+.social-link svg {
+    width: 18px;
+    height: 18px;
+}
 }
