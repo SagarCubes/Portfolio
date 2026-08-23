@@ -366,20 +366,20 @@ function getGallerySettings() {
 
     if (width < 600) {
         return {
-            targetRowHeight: 180,
+            targetRowHeight: 400,
             gap: 8
         };
     }
 
     if (width < 900) {
         return {
-            targetRowHeight: 220,
+            targetRowHeight: 360,
             gap: 10
         };
     }
     else if (width > 1000) {
         return{
-            targetRowHeight: 760,
+            targetRowHeight: 780,
             gap: 12
         }
     }
@@ -614,20 +614,20 @@ function getAVGallerySettings() {
 
     if (width < 600) {
         return {
-            targetRowHeight: 180,
+            targetRowHeight: 400,
             gap: 8
         };
     }
 
     if (width < 900) {
         return {
-            targetRowHeight: 220,
+            targetRowHeight: 360,
             gap: 10
         };
     }
     else if (width > 1000) {
         return{
-            targetRowHeight: 760,
+            targetRowHeight: 780,
             gap: 12
         }
     }
@@ -889,20 +889,20 @@ function getTravelGallerySettings() {
 
     if (width < 600) {
         return {
-            targetRowHeight: 180,
+            targetRowHeight: 400,
             gap: 8
         };
     }
 
     if (width < 900) {
         return {
-            targetRowHeight: 220,
+            targetRowHeight: 360,
             gap: 10
         };
     }
     else if (width > 1000) {
         return{
-            targetRowHeight: 760,
+            targetRowHeight: 780,
             gap: 12
         }
     }
@@ -1124,14 +1124,14 @@ function getWildGallerySettings() {
 
     if (width < 600) {
         return {
-            targetRowHeight: 180,
+            targetRowHeight: 400,
             gap: 8
         };
     }
 
     if (width < 900) {
         return {
-            targetRowHeight: 220,
+            targetRowHeight: 360,
             gap: 10
         };
     }
