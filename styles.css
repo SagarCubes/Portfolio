@@ -1172,7 +1172,24 @@ html{
     pointer-events: auto;
 }
 
+@media (max-width: 600px) {
 
+    img {
+        max-width: 100%;
+    }
+
+    .hero img,
+    .about img,
+    .featured img,
+    .albums img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
 /* ---------------- IMAGE ---------------- */
 
 .lightbox-image {
